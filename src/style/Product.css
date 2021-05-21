@@ -1,0 +1,11 @@
+.product {
+
+}
+
+.product__price {
+
+}
+
+.product__rating {
+    display: flex;
+}
