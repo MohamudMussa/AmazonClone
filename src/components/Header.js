@@ -2,6 +2,8 @@ import React from 'react'
 import '../style/Header.css'
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+
 
 const Header = () => {
     return (
@@ -25,8 +27,8 @@ const Header = () => {
                 <Link to='/login'
                     className="header__link">
                     <div className="header__option">
-                        <span>Hello, Mohamud</span>
-                        <span>Sign In</span>
+                        <span className="header__optionLineOne">Hello, Mohamud</span>
+                        <span className="header__optionLineTwo">Sign In</span>
 
                     </div>
 
@@ -38,8 +40,8 @@ const Header = () => {
                 <Link to='/'
                     className="header__link">
                     <div className="header__option">
-                        <span>Returns</span>
-                        <span>& Orders</span>
+                        <span className="header__optionLineOne">Returns</span>
+                        <span className="header__optionLineTwo">& Orders</span>
                     </div>
 
                 </Link>
@@ -51,8 +53,8 @@ const Header = () => {
                 <Link to='/'
                     className="header__link">
                     <div className="header__option">
-                        <span>Your</span>
-                        <span>Prime</span>
+                        <span className="header__optionLineOne">Your</span>
+                        <span className="header__optionLineTwo">Prime</span>
 
                     </div>
 
@@ -66,12 +68,28 @@ const Header = () => {
                 <Link to='/login'
                     className="header__link">
                     <div className="header__option">
-                        <span>Hello, Mohamud</span>
-                        <span>Sign In</span>
+                        <span className="header__optionLineOne">Hello, Mohamud</span>
+                        <span className="header__optionLineTwo">Sign In</span>
 
                     </div>
 
                 </Link>
+
+                <Link to='/basket'
+                    className="header__link">
+                    <div className="header__optionBasket">
+
+                        {/* Shopping Basket Icon*/}
+                        <ShoppingBasketIcon />
+
+
+                        {/* Number of Items in the basket*/}
+                        <span> 0 </span>
+
+                    </div>
+
+                </Link>
+
 
 
             </div>
