@@ -10,12 +10,24 @@ function App() {
       <div>
         <Switch>
           <Route path='/checkout'>
+            <Header />
             <h1>Checkout </h1>
           </Route>
 
           <Route path='/login'>
             <h1>Login </h1>
           </Route>
+
+          <Route path='/returns'>
+            <Header />
+            <h1>Returns </h1>
+          </Route>
+
+          <Route path='/basket'>
+            <Header />
+            <h1>Your Basket </h1>
+          </Route>
+
 
 
           <Route path='/'>
