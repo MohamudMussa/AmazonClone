@@ -19,6 +19,63 @@ const Header = () => {
 
             {/* 3 Links */}
 
+            <div className="header__nav">
+                {/* First Link */}
+
+                <Link to='/login'
+                    className="header__link">
+                    <div className="header__option">
+                        <span>Hello, Mohamud</span>
+                        <span>Sign In</span>
+
+                    </div>
+
+                </Link>
+
+
+                {/* 2nd Link Return Orders */}
+
+                <Link to='/'
+                    className="header__link">
+                    <div className="header__option">
+                        <span>Returns</span>
+                        <span>& Orders</span>
+                    </div>
+
+                </Link>
+
+
+
+                {/* 3rd Link PRIME */}
+
+                <Link to='/'
+                    className="header__link">
+                    <div className="header__option">
+                        <span>Your</span>
+                        <span>Prime</span>
+
+                    </div>
+
+                </Link>
+
+
+
+                {/* 4th Link */}
+
+
+                <Link to='/login'
+                    className="header__link">
+                    <div className="header__option">
+                        <span>Hello, Mohamud</span>
+                        <span>Sign In</span>
+
+                    </div>
+
+                </Link>
+
+
+            </div>
+
             {/* Basket icon with number */}
 
 

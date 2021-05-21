@@ -30,5 +30,17 @@
     background-color: orange;
 }
 
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.header__link {
+    color: white;
+    text-decoration: none;
+}
 
+.header__option {
+    display: flex;
+    flex-direction: column;
+}
