@@ -26,9 +26,9 @@ const Home = () => {
 
                 <Product
                     id={1}
-                    title='FireStick'
+                    title='2020 Apple iPad (10.2-inch, Wi-Fi, 32GB)'
                     price={21.99}
-                    image='https://images-eu.ssl-images-amazon.com/images/I/51Da2Z%2BFTFL._AC_UL480_SR480,480_.jpg'
+                    image='https://m.media-amazon.com/images/I/71KivvWmOJL._AC_UY436_FMwebp_QL65_.jpg'
                     rating={5}
                 />
 
@@ -37,8 +37,6 @@ const Home = () => {
 
 
             <div className='home__row'>
-
-
                 <Product
                     id={1}
                     title='FireStick'
@@ -63,6 +61,16 @@ const Home = () => {
                     rating={5}
                     image='https://images-eu.ssl-images-amazon.com/images/I/51Da2Z%2BFTFL._AC_UL480_SR480,480_.jpg'
 
+                />
+            </div>
+
+            <div className='home__row'>
+                <Product
+                    id={1}
+                    title='FireStick'
+                    price={21.99}
+                    image='https://images-eu.ssl-images-amazon.com/images/I/51Da2Z%2BFTFL._AC_UL480_SR480,480_.jpg'
+                    rating={5}
                 />
 
 

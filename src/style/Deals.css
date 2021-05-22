@@ -8,6 +8,7 @@
     background-color: white;
     z-index: 1;
     
+    
 }
 
 .deals__image {
@@ -21,5 +22,6 @@
 
 .deals__link {
    margin-left: 30px;
+
   
 }

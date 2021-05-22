@@ -22,6 +22,7 @@ const Product = ({ id, title, image, price, rating }) => {
             </div>
 
             <img src={image} alt='productImage' />
+
             <button>Add to Basket </button>
 
         </div>
