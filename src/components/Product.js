@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/Product.css'
 
-const Product = ({ id, title, image, price, rating }) => {
+const Product = ({ id, title, image, price, rating, amount }) => {
     return (
         <div className="product" id={id}>
             <div className="product__info">
@@ -18,7 +18,9 @@ const Product = ({ id, title, image, price, rating }) => {
                         .map((_) => (
                             <p>⭐</p>
                         ))}
+                    <p style={{ fontSize: '11px', paddingTop: '5px' }}>{amount}</p>
                 </div>
+
             </div>
 
             <img src={image} alt='productImage' />

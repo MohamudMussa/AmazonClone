@@ -8,7 +8,8 @@
     background-color: white;
     z-index: 1;
     align-items: center;
-
+    contain: content;
+    padding: 20px;
 }
 
 .product__price {
@@ -34,7 +35,7 @@
     width: 100%;
     margin-left: 5px;
     margin-bottom: 15px;
-    
+
   
 }
 
