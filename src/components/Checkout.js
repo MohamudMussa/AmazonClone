@@ -18,7 +18,10 @@ const Checkout = () => {
 
 
             ) : (<div>
-                <h2> Your Shopping Basket </h2>
+                <h2 className='checkout__title'> Your Shopping Basket </h2>
+
+                {/* List out checkout products */}
+
             </div>)}
         </div>
     )
