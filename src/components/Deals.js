@@ -6,7 +6,7 @@ const Deals = ({ title, image, link }) => {
     return (
         <div className="deals">
 
-            <div className="div__info">
+            <div className="deal__info">
 
 
                 {/* title */}
