@@ -1,6 +1,8 @@
 export const initalState = {
-    basket: []
-}
+    basket: [],
+};
+
+
 
 // reducer is a way of saying, when I get state (anything in data layer), we then minipulate things in the state.
 
