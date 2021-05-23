@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './components/Header';
 import Home from './components/Home';
+import { Checkbox } from '@material-ui/core';
+import Checkout from './components/Checkout';
 
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
         <Switch>
           <Route path='/checkout'>
             <Header />
-            <h1>Checkout </h1>
+            <Checkout />
           </Route>
 
           <Route path='/login'>

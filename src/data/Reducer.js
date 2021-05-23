@@ -7,18 +7,27 @@ export const initalState = {
 // reducer is a way of saying, when I get state (anything in data layer), we then minipulate things in the state.
 
 
-function reducer(state, action) {
+const reducer = (state, action) => {
+
+    console.log(action)
     switch (action.type) {
+
+
         case 'ADD_TO_BASKET':
 
             //LOGIC OF ADDING TO BASKET GOES Header
-            break;
+            return {
+                ...state,
+                basket: [...state.basket, action.item]
+            }
+        // break;
 
         case 'REMOVE_FROM_BASKET':
 
             //LOGIC FOR REMOVING ITEM FROM BASKET 
+            return { state }
 
-            break;
+        // break;
 
         //you need a default state
 

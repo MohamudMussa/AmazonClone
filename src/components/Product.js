@@ -1,7 +1,10 @@
 import React from 'react'
 import '../style/Product.css'
+import { useStateValue } from '../data/StateProvider'
 
 const Product = ({ id, title, image, price, rating, amount }) => {
+
+    const [{ basket }, dispatch] = useStateValue();
 
     const addToBasket = () => {
 
