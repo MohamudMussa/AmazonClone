@@ -28,7 +28,7 @@ function App() {
 
           <Route path='/basket'>
             <Header />
-            <h1>Your Basket </h1>
+            <Checkout />
           </Route>
 
 
