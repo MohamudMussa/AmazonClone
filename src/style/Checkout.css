@@ -2,3 +2,46 @@
     width: 100%;
 
 }
+
+.checkout__image{
+    object-fit: contain;
+    height: 280px;
+    width: 280px;
+    margin-left: 15px;
+    margin-top: 10px
+
+}
+
+.checkout__title {
+    font-size: 29px;
+    font-weight: 800px;
+    
+}
+
+.checkoutProduct__rating {
+    display: flex;
+    margin-top: 15px;
+
+}
+
+
+.checkoutProduct__info {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.checkoutProduct__info > button {
+
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    display: flex;
+    background-color:#FFD814;
+    font-weight: 100;
+    border: 1px solid;
+    text-decoration: none;
+    display: inline-block;
+    background-image: linear-gradient(white, orange);
+    border-radius: 25px;
+}
+
