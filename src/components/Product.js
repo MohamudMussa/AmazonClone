@@ -2,6 +2,26 @@ import React from 'react'
 import '../style/Product.css'
 
 const Product = ({ id, title, image, price, rating, amount }) => {
+
+    const addToBasket = () => {
+
+        // add item to basket 
+
+        //remember dispatch is like a gun, its going to fire an object
+        //the reducer checks the action type
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                tite: title,
+                image: image,
+                price: price,
+                rating, rating
+            }
+        })
+
+    };
+
     return (
         <div className="product" id={id}>
             <div className="product__info">
@@ -25,7 +45,7 @@ const Product = ({ id, title, image, price, rating, amount }) => {
 
             <img src={image} alt='productImage' />
 
-            <button>Add to Basket </button>
+            <button onClick={addToBasket}>Add to Basket </button>
 
         </div>
     )
