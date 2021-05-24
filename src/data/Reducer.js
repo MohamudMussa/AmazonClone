@@ -42,7 +42,10 @@ const reducer = (state, action) => {
             }
 
 
-            return { ...state }
+            return {
+                ...state,
+                basket: newBasket,
+            };
 
 
 
