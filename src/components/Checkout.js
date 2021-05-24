@@ -20,21 +20,27 @@ const Checkout = () => {
                 </div>
 
 
-            ) : (<div>
-                <h2 className='checkout__title'> Your Shopping Basket </h2>
+            ) : (
+                <div>
+                    <h2 className='checkout__title'> Your Shopping Basket </h2>
 
-                {/* List out checkout products */}
+                    {/* List out checkout products */}
+                    {basket?.map((item) => (
 
-                <CheckoutProduct
-                    id={basket.id}
-                    title={basket.title}
-                    price={basket.price}
-                    rating={basket.rating}
-                    image={basket.image}
-                    amount={basket.amount}
-                />
+                        <CheckoutProduct
+                            id={item.id}
+                            title={item.title}
+                            price={item.price}
+                            rating={item.rating}
+                            image={item.image}
+                            amount={item.amount}
+                        />
 
-            </div>)}
+
+                    ))}
+
+
+                </div>)}
         </div>
     )
 }

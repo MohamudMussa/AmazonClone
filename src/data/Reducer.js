@@ -25,7 +25,26 @@ const reducer = (state, action) => {
         case 'REMOVE_FROM_BASKET':
 
             //LOGIC FOR REMOVING ITEM FROM BASKET 
-            return { state }
+
+            let newBasket = [...state.basket];
+
+
+            const index = state.basket.findIndex((basketItem) => basketItem.id === action.id);
+
+            if (index >= 0) {
+                // the item exist and remove it
+
+                // splice is going to find it and cut it, this removes it from the basket 
+                newBasket.splice(index, 1);
+
+            } else {
+                console.warn('Cant remove product')
+            }
+
+
+            return { ...state }
+
+
 
         // break;
 
