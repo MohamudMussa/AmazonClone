@@ -2,6 +2,8 @@ import React from 'react'
 import { useStateValue } from '../data/StateProvider'
 
 
+
+
 const CheckoutProduct = ({ id, title, image, price, rating, amount }) => {
 
     const [{ basket }, dispatch] = useStateValue();

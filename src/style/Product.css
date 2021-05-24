@@ -40,16 +40,10 @@
 }
 
 .product > button {
-    padding-top: 5px;
-    padding-bottom:5px;
-    display: flex;
-    background-color:#FFD814;
-    font-weight: 100;
+    background: #f0c14b;
     border: 1px solid;
-    text-decoration: none;
-    display: inline-block;
-    background-image: linear-gradient(white, orange);
-    border-radius: 25px;
-
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
 
 }

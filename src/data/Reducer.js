@@ -26,14 +26,15 @@ const reducer = (state, action) => {
 
             //LOGIC FOR REMOVING ITEM FROM BASKET 
 
+            // first I need to clone the current basket
             let newBasket = [...state.basket];
 
-
+            // we check to see if  product exist
             const index = state.basket.findIndex((basketItem) => basketItem.id === action.id);
 
             if (index >= 0) {
-                // the item exist and remove it
 
+                // the item exist and remove it
                 // splice is going to find it and cut it, this removes it from the basket 
                 newBasket.splice(index, 1);
 
