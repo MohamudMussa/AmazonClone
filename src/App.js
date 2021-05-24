@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import { Checkbox } from '@material-ui/core';
 import Checkout from './components/Checkout';
+import Login from './components/Login';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           </Route>
 
           <Route path='/login'>
-            <h1>Login </h1>
+            <Login />
           </Route>
 
           <Route path='/returns'>

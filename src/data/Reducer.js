@@ -2,6 +2,10 @@ export const initalState = {
     basket: [],
 };
 
+// Selector
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => item.price + amount, 0);
+
 
 
 // reducer is a way of saying, when I get state (anything in data layer), we then minipulate things in the state.
