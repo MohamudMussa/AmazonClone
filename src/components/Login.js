@@ -8,11 +8,11 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const register = () => {
+    const register = e => {
 
     }
 
-    const signIn = () => {
+    const signIn = e => {
 
     }
 
